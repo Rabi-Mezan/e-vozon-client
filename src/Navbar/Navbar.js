@@ -9,6 +9,7 @@ const Navbar = () => {
     return (
         <div>
             <NavLink className='link' to='/home'>Home</NavLink>
+            <NavLink className='link' to='/about'>About</NavLink>
 
             {user.email ? (
                 <button onClick={handleLogout} className="btn btn-danger">

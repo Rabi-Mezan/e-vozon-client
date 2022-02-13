@@ -5,6 +5,8 @@ import Login from './Login/Login';
 import Home from './Home/Home';
 import AuthProvider from './AuthProvider/AuthProvider';
 import Navbar from './Navbar/Navbar';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import About from './About/About';
 
 function App() {
   return (
@@ -13,12 +15,18 @@ function App() {
         <Router>
           <Navbar></Navbar>
           <Switch>
-            <Route path="/">
+            {/* <Route path="/">
+              <Home></Home>
+            </Route> */}
+            <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/login">
+            <Route exact path="/login">
               <Login></Login>
             </Route>
+            <PrivateRoute exact path="/about">
+              <About></About>
+            </PrivateRoute>
           </Switch>
         </Router>
       </AuthProvider>

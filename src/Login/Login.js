@@ -63,28 +63,10 @@ const Login = () => {
               </div>
             </div>
             <div className="login-btn mt-4">
-              <button
-                onClick={handleGoogleLogin}
-                className="btn btn-warning m-2"
-              >
-                google sign in
-              </button>
-              <button onClick={handleGithubLogin} className="btn btn-dark m-2">
-                Github sign in
-              </button>
+              <button onClick={handleGoogleLogin}>GoogleSignIn</button>
             </div>
           </div>
         </div>
-        {/* <div className="col-md-6">
-          <div className="right-side-image">
-            <img
-              className="w-100"
-              src="https://i.ibb.co/MSBbLcd/access-control-system-abstract-concept-illustration-security-system-authorize-entry-login-credential.jpg"
-              alt=""
-            />
-          </div>
-          ;
-        </div> */}
       </div>
     </div>
   );
